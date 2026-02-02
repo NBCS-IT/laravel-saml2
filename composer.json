@@ -1,9 +1,9 @@
 {
-    "name": "24slides/laravel-saml2",
+    "name": "NBCS-IT/laravel-saml2",
     "type": "library",
     "description": "SAML2 Service Provider integration to your Laravel 5.4+ application, based on OneLogin toolkit",
     "keywords": ["laravel", "saml", "saml2", "onelogin", "sso"],
-    "homepage": "https://github.com/24slides/laravel-saml2",
+    "homepage": "https://github.com/NBCS-IT/laravel-saml2",
     "license": "MIT",
     "authors": [
         {
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Slides\\Saml2\\": "src/"
+            "NBCSIT\\Saml2\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -36,10 +36,10 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "Saml2": "Slides\\Saml2\\Facades\\Auth"
+                "Saml2": "NBCSIT\\Saml2\\Facades\\Auth"
             },
             "providers": [
-                "Slides\\Saml2\\ServiceProvider"
+                "NBCSIT\\Saml2\\ServiceProvider"
             ]
         },
         "branch-aliases": {
