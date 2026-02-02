@@ -1,9 +1,9 @@
 <?php
 
-namespace Slides\Saml2\Http\Controllers;
+namespace NBCSIT\Saml2\Http\Controllers;
 
-use Slides\Saml2\Events\SignedIn;
-use Slides\Saml2\Auth;
+use NBCSIT\Saml2\Events\SignedIn;
+use NBCSIT\Saml2\Auth;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use OneLogin\Saml2\Error as OneLoginError;
@@ -11,7 +11,7 @@ use OneLogin\Saml2\Error as OneLoginError;
 /**
  * Class Saml2Controller
  *
- * @package Slides\Saml2\Http\Controllers
+ * @package NBCSIT\Saml2\Http\Controllers
  */
 class Saml2Controller extends Controller
 {

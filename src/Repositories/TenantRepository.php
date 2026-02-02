@@ -1,13 +1,13 @@
 <?php
 
-namespace Slides\Saml2\Repositories;
+namespace NBCSIT\Saml2\Repositories;
 
-use Slides\Saml2\Models\Tenant;
+use NBCSIT\Saml2\Models\Tenant;
 
 /**
  * Class TenantRepository
  *
- * @package Slides\Saml2\Repositories
+ * @package NBCSIT\Saml2\Repositories
  */
 class TenantRepository
 {

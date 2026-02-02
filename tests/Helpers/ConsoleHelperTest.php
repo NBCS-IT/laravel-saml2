@@ -1,9 +1,9 @@
 <?php
 
-namespace Slides\Saml2\Tests;
+namespace NBCSIT\Saml2\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Slides\Saml2\Helpers\ConsoleHelper;
+use NBCSIT\Saml2\Helpers\ConsoleHelper;
 
 class ConsoleHelperTest extends TestCase
 {

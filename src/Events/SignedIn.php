@@ -1,14 +1,14 @@
 <?php
 
-namespace Slides\Saml2\Events;
+namespace NBCSIT\Saml2\Events;
 
-use Slides\Saml2\Saml2User;
-use Slides\Saml2\Auth;
+use NBCSIT\Saml2\Saml2User;
+use NBCSIT\Saml2\Auth;
 
 /**
  * Class LoggedIn
  *
- * @package Slides\Saml2\Events
+ * @package NBCSIT\Saml2\Events
  */
 class SignedIn
 {

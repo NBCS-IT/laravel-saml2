@@ -1,14 +1,14 @@
 <?php
 
-namespace Slides\Saml2;
+namespace NBCSIT\Saml2;
 
 use OneLogin\Saml2\Auth as OneLoginAuth;
-use Slides\Saml2\Models\Tenant;
+use NBCSIT\Saml2\Models\Tenant;
 
 /**
  * Class Saml2User
  *
- * @package Slides\Saml2
+ * @package NBCSIT\Saml2
  */
 class Saml2User
 {

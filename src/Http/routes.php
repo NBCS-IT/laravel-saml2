@@ -8,26 +8,26 @@ Route::group([
 ], function () {
     Route::get('/{uuid}/logout', array(
         'as' => 'saml.logout',
-        'uses' => 'Slides\Saml2\Http\Controllers\Saml2Controller@logout',
+        'uses' => 'NBCSIT\Saml2\Http\Controllers\Saml2Controller@logout',
     ));
 
     Route::get('/{uuid}/login', array(
         'as' => 'saml.login',
-        'uses' => 'Slides\Saml2\Http\Controllers\Saml2Controller@login',
+        'uses' => 'NBCSIT\Saml2\Http\Controllers\Saml2Controller@login',
     ));
 
     Route::get('/{uuid}/metadata', array(
         'as' => 'saml.metadata',
-        'uses' => 'Slides\Saml2\Http\Controllers\Saml2Controller@metadata',
+        'uses' => 'NBCSIT\Saml2\Http\Controllers\Saml2Controller@metadata',
     ));
 
     Route::post('/{uuid}/acs', array(
         'as' => 'saml.acs',
-        'uses' => 'Slides\Saml2\Http\Controllers\Saml2Controller@acs',
+        'uses' => 'NBCSIT\Saml2\Http\Controllers\Saml2Controller@acs',
     ));
 
     Route::get('/{uuid}/sls', array(
         'as' => 'saml.sls',
-        'uses' => 'Slides\Saml2\Http\Controllers\Saml2Controller@sls',
+        'uses' => 'NBCSIT\Saml2\Http\Controllers\Saml2Controller@sls',
     ));
 });

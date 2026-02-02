@@ -1,15 +1,15 @@
 <?php
 
-namespace Slides\Saml2\Facades;
+namespace NBCSIT\Saml2\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class Saml2Auth
  *
- * @method static \Slides\Saml2\Models\Tenant|null getTenant()
+ * @method static \NBCSIT\Saml2\Models\Tenant|null getTenant()
  *
- * @package Slides\Saml2\Facades
+ * @package NBCSIT\Saml2\Facades
  */
 class Auth extends Facade
 {
@@ -20,6 +20,6 @@ class Auth extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Slides\Saml2\Auth';
+        return 'NBCSIT\Saml2\Auth';
     }
 }

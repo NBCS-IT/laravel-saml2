@@ -1,11 +1,11 @@
 <?php
 
-namespace Slides\Saml2;
+namespace NBCSIT\Saml2;
 
 /**
  * Class ServiceProvider
  *
- * @package Slides\Saml2
+ * @package NBCSIT\Saml2
  */
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -63,12 +63,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     protected function bootCommands()
     {
         $this->commands([
-            \Slides\Saml2\Commands\CreateTenant::class,
-            \Slides\Saml2\Commands\UpdateTenant::class,
-            \Slides\Saml2\Commands\DeleteTenant::class,
-            \Slides\Saml2\Commands\RestoreTenant::class,
-            \Slides\Saml2\Commands\ListTenants::class,
-            \Slides\Saml2\Commands\TenantCredentials::class
+            \NBCSIT\Saml2\Commands\CreateTenant::class,
+            \NBCSIT\Saml2\Commands\UpdateTenant::class,
+            \NBCSIT\Saml2\Commands\DeleteTenant::class,
+            \NBCSIT\Saml2\Commands\RestoreTenant::class,
+            \NBCSIT\Saml2\Commands\ListTenants::class,
+            \NBCSIT\Saml2\Commands\TenantCredentials::class
         ]);
     }
 
@@ -79,7 +79,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     protected function bootMiddleware()
     {
-        $this->app['router']->aliasMiddleware('saml2.resolveTenant', \Slides\Saml2\Http\Middleware\ResolveTenant::class);
+        $this->app['router']->aliasMiddleware('saml2.resolveTenant', \NBCSIT\Saml2\Http\Middleware\ResolveTenant::class);
     }
 
     /**

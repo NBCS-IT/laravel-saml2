@@ -39,19 +39,19 @@ For older versions, you have to add the service provider and alias to your `conf
 ```php
 'providers' => [
     ...
-    Slides\Saml2\ServiceProvider::class,
+    NBCSIT\Saml2\ServiceProvider::class,
 ]
 
 'alias' => [
     ...
-    'Saml2' => Slides\Saml2\Facades\Auth::class,
+    'Saml2' => NBCSIT\Saml2\Facades\Auth::class,
 ]
 ```
 
 ##### Step 2. Publish the configuration file.
 
 ```
-php artisan vendor:publish --provider="Slides\Saml2\ServiceProvider"
+php artisan vendor:publish --provider="NBCSIT\Saml2\ServiceProvider"
 ```
 
 ##### Step 3. Run migrations
@@ -109,10 +109,10 @@ You may disable them by setting `saml2.useRoutes` to `false`.
 
 ### Authentication events
 
-The simplest way to handle SAML authentication is to add listeners on `Slides\Saml2\SignedIn` and `Slides\Saml2\SignedOut` events.
+The simplest way to handle SAML authentication is to add listeners on `NBCSIT\Saml2\SignedIn` and `NBCSIT\Saml2\SignedOut` events.
 
 ```php
-Event::listen(\Slides\Saml2\Events\SignedIn::class, function (\Slides\Saml2\Events\SignedIn $event) {
+Event::listen(\NBCSIT\Saml2\Events\SignedIn::class, function (\NBCSIT\Saml2\Events\SignedIn $event) {
     $messageId = $event->getAuth()->getLastMessageId();
     
     // your own code preventing reuse of a $messageId to stop replay attacks
@@ -180,7 +180,7 @@ For the second case you will only receive the event. Both cases receive the same
 Note that for the second case, you may have to manually save your session to make the logout stick (as the session is saved by middleware, but the OneLogin library will redirect back to your IdP before that happens):
 
 ```php
-Event::listen('Slides\Saml2\Events\SignedOut', function (SignedOut $event) {
+Event::listen('NBCSIT\Saml2\Events\SignedOut', function (SignedOut $event) {
     Auth::logout();
     Session::save();
 });

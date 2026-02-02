@@ -1,9 +1,9 @@
 <?php
 
-namespace Slides\Saml2\Tests;
+namespace NBCSIT\Saml2\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Slides\Saml2\Auth;
+use NBCSIT\Saml2\Auth;
 
 class Saml2AuthTest extends TestCase
 {
@@ -190,11 +190,11 @@ class Saml2AuthTest extends TestCase
     /**
      * Create a fake tenant.
      *
-     * @return \Slides\Saml2\Models\Tenant
+     * @return \NBCSIT\Saml2\Models\Tenant
      */
     protected function mockTenant()
     {
-        return new \Slides\Saml2\Models\Tenant();
+        return new \NBCSIT\Saml2\Models\Tenant();
     }
 }
 

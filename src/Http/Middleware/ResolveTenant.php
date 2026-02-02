@@ -1,16 +1,16 @@
 <?php
 
-namespace Slides\Saml2\Http\Middleware;
+namespace NBCSIT\Saml2\Http\Middleware;
 
-use Slides\Saml2\Repositories\TenantRepository;
+use NBCSIT\Saml2\Repositories\TenantRepository;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Slides\Saml2\OneLoginBuilder;
+use NBCSIT\Saml2\OneLoginBuilder;
 
 /**
  * Class ResolveTenant
  *
- * @package Slides\Saml2\Http\Middleware
+ * @package NBCSIT\Saml2\Http\Middleware
  */
 class ResolveTenant
 {
@@ -74,7 +74,7 @@ class ResolveTenant
      *
      * @param  \Illuminate\Http\Request  $request
      *
-     * @return \Slides\Saml2\Models\Tenant|null
+     * @return \NBCSIT\Saml2\Models\Tenant|null
      */
     protected function resolveTenant($request)
     {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Slides\Saml2\Commands;
+namespace NBCSIT\Saml2\Commands;
 
-use Slides\Saml2\Helpers\ConsoleHelper;
-use Slides\Saml2\Repositories\TenantRepository;
+use NBCSIT\Saml2\Helpers\ConsoleHelper;
+use NBCSIT\Saml2\Repositories\TenantRepository;
 
 /**
  * Class UpdateTenant
  *
- * @package Slides\Saml2\Commands
+ * @package NBCSIT\Saml2\Commands
  */
 class UpdateTenant extends \Illuminate\Console\Command
 {

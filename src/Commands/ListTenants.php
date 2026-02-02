@@ -1,13 +1,13 @@
 <?php
 
-namespace Slides\Saml2\Commands;
+namespace NBCSIT\Saml2\Commands;
 
-use Slides\Saml2\Repositories\TenantRepository;
+use NBCSIT\Saml2\Repositories\TenantRepository;
 
 /**
  * Class ListTenants
  *
- * @package Slides\Saml2\Commands
+ * @package NBCSIT\Saml2\Commands
  */
 class ListTenants extends \Illuminate\Console\Command
 {

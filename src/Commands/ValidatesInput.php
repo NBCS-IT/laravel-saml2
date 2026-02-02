@@ -1,11 +1,11 @@
 <?php
 
-namespace Slides\Saml2\Commands;
+namespace NBCSIT\Saml2\Commands;
 
 /**
  * Trait ValidatesInput
  *
- * @package Slides\Saml2\Commands
+ * @package NBCSIT\Saml2\Commands
  */
 trait ValidatesInput
 {
