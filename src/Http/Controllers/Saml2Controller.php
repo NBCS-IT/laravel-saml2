@@ -66,7 +66,7 @@ class Saml2Controller extends Controller
 
         $redirectUrl = $user->getIntendedUrl();
 
-        if ($redirectUrl) {
+        if (filled($redirectUrl) && $redirectUrl !== 'undefined') {
             return redirect($redirectUrl);
         }
 
